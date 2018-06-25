@@ -1,0 +1,5 @@
+add_executable(main main.cpp)
+add_executable(example example.cpp)
+add_subdirectory(distorm)
+include_directories(distorm/include ${CMAKE_BINARY_DIR}/distorm)
+target_link_libraries(main distorm)
