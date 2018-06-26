@@ -1,5 +1,6 @@
 #ifdef WIN32
 #include <windows.h>
+#include <psapi.h>
 #else
 #endif
 
@@ -76,7 +77,7 @@ int main(int argc, char **argv)
 		}
 		break;
 		case CREATE_PROCESS_DEBUG_EVENT:
-		{
+		{EnumProcessModules()
 			auto createProcess = debug_event.u.CreateProcessInfo;
 			auto pStart = (void *)createProcess.lpStartAddress;
 			std::vector<byte> aBytes(0x300);

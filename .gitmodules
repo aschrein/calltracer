@@ -1,3 +1,12 @@
 [submodule "distorm"]
 	path = distorm
 	url = https://github.com/aschrein/distorm.git
+[submodule "imgui"]
+	path = imgui
+	url = https://github.com/aschrein/imgui.git
+[submodule "glfw"]
+	path = glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "gl3w"]
+	path = gl3w
+	url = https://github.com/skaslev/gl3w.git
